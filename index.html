@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Falling Sands</title>
+  <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+  <h1>Falling Sands</h1>
+
+  <div class="container">
+    <div id="gameArea">
+    <canvas id="world" width="900" height="1000"></canvas>
+    </div>
+
+
+    <div class="toolbar">
+      <div class="toolbar-group">
+        <span class="label">Element</span>
+        <button class="btn selected" data-element="sand">
+          <span class="color-dot dot-sand"></span>Sand
+        </button>
+        <button class="btn" data-element="water">
+          <span class="color-dot dot-water"></span>Water
+        </button>
+        <button class="btn" data-element="rock">
+          <span class="color-dot dot-rock"></span>Rock
+        </button>
+        <button class="btn" data-element="lava">
+          <span class="color-dot dot-lava"></span>Lava
+        </button>
+        <button class="btn" data-element="erase">Erase</button>
+      </div>
+
+      <div class="toolbar-group">
+        <span class="label">Brush</span>
+        <input id="brushSize" type="range" min="1" max="8" value="3" />
+      </div>
+
+      <div class="toolbar-group">
+        <span class="label">Sim</span>
+        <button class="btn" id="pauseBtn">Pause</button>
+        <button class="btn" id="clearBtn">Clear</button>
+      </div>
+    </div>
+
+    <div class="status">
+      FPS: <span id="fps">0</span> · Brush: <span id="brushLabel">3</span> px
+    
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
