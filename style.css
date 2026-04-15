@@ -14,8 +14,8 @@
 }
 
 #gameArea {
-    width: 900px;
-    height: 1000px;
+    width: 600px;
+    height: 600px;
     position: relative;
     overflow: hidden;
 
