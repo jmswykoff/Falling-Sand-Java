@@ -1,7 +1,7 @@
 // --- CONFIG ---
 const CELL_SIZE = 4;
-const GRID_WIDTH = 125;   // 600 / 4
-const GRID_HEIGHT = 125;  // 600 / 4
+const GRID_WIDTH = 150;   // 600 / 4
+const GRID_HEIGHT = 150;  // 600 / 4
 
 const EMPTY = 0;
 const SAND = 1;
